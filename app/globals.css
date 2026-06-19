@@ -228,6 +228,23 @@ header {
   .nav-links li {
     margin: 15px 0;
   }
+
+  .dropdown-content {
+    visibility: visible;
+    position: static;
+    display: block;
+    opacity: 1;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding: 10px 0 0 0;
+  }
+
+  .dropdown-content a {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
 }
 
 .nav-links a.active::after {
@@ -240,7 +257,7 @@ header {
 }
 
 .dropdown-content {
-  display: none;
+  visibility: hidden;
   position: absolute;
   top: 100%;
   left: 0;
@@ -253,11 +270,11 @@ header {
   padding: 10px 0;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
 .nav-dropdown:hover .dropdown-content {
-  display: block;
+  visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }
