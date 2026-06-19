@@ -12,7 +12,7 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header>
+    <header className={isOpen ? 'mobile-open' : ''}>
         <div className="nav-container">
             <Link href="/" className="logo" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center' }}>
                 <Image 
