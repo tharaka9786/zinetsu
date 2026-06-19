@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhananjaya Prasad Photography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Dhananjaya Prasad Photography" onerror="this.onerror=null; this.src='https://via.placeholder.com/250x40/000000/FFFFFF?text=DHANANJAYA+PRASAD';">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="nav-dropdown">
+                    <a href="gallery.html">Gallery <i class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 3px;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="gallery.html">All Works</a></li>
+                        <li><a href="featured-works.html">Feature</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('images/bg1.jpg');"></div>
+            <div class="slide" style="background-image: url('images/bg2.jpg');"></div>
+            <div class="slide" style="background-image: url('images/bg3.jpg');"></div>
+            <div class="slide" style="background-image: url('images/bg4.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content hidden">
+            <h1>Dananjaya Prasad Photography</h1>
+            <p>Bringing stories to life through the lens. Experience moments frozen in time, blending modern aesthetics with profound emotion.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image hidden">
+                    <img src="images/profile.jpg" alt="Dhananjaya Prasad - Photographer">
+                </div>
+                <div class="about-text hidden" style="transition-delay: 0.2s;">
+                    <h2 style="font-size: 2.5rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px;">About</h2>
+                    <h3 style="font-size: 2rem; margin-bottom: 5px;">Dananjaya Prasad</h3>
+                    <h4 style="color: var(--text-muted); font-weight: 400; margin-bottom: 25px; letter-spacing: 1px;">Founder & Lead Photographer, Zinetzu</h4>
+                    <p>Welcome! I am a professional photographer based in Sri Lanka, dedicated to turning fleeting moments into timeless visual art. Whether capturing the raw energy of commercial events, the elegance of fashion, or the precision of product design, my goal is to tell compelling stories through a lens.</p>
+                    <p>I believe exceptional photography lives at the intersection of creative intuition and rigorous science. To back my vision, I am currently pursuing a BA (Hons) in Image Art at the University of Kelaniya, Sri Lanka (Final Year), specializing in lighting physics and color science. Complementing my academic background, I have completed intensive Industrial Training under senior industry veterans, mastering advanced studio workflows, commercial lighting, and professional post-production (Adobe Photoshop, Lightroom, and Premiere Pro).</p>
+                    <p>By blending this strong academic foundation with real-world studio expertise, I bring technical precision, adaptability, and creative innovation to every shoot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section (Formerly Selected Work) -->
+    <section id="categories" class="section selected-work">
+        <div class="container">
+            <h2 class="section-title hidden">Categories</h2>
+            
+            <div class="portfolio-grid">
+                <!-- Category 1 -->
+                <div class="portfolio-item hidden" onclick="window.location.href='portfolio.html'">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fashion & Portraiture">
+                    <div class="portfolio-overlay">
+                        <h3>Fashion & Portraiture</h3>
+                        <span>View Gallery</span>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="portfolio-item hidden" onclick="window.location.href='portfolio.html'" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Commercial & Event Coverage">
+                    <div class="portfolio-overlay">
+                        <h3>Commercial & Event Coverage</h3>
+                        <span>View Gallery</span>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="portfolio-item hidden" onclick="window.location.href='portfolio.html'" style="transition-delay: 0.4s;">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product & Advertising">
+                    <div class="portfolio-overlay">
+                        <h3>Product & Advertising</h3>
+                        <span>View Gallery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Works Section -->
+    <section id="featured" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">Featured Works</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item hidden"><img src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Featured 1"></div>
+                <div class="gallery-item hidden" style="transition-delay: 0.1s;"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Featured 2"></div>
+                <div class="gallery-item hidden" style="transition-delay: 0.2s;"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Featured 3"></div>
+                <div class="gallery-item hidden" style="transition-delay: 0.3s;"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Featured 4"></div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;" class="hidden">
+                <a href="gallery.html" class="btn">View All Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Google Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">Client Reviews</h2>
+            <p class="hidden" style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">See what our clients have to say about their experience.</p>
+            
+            <!-- Google Reviews Widget Container -->
+            <div class="reviews-widget-container hidden" style="width: 100%; min-height: 200px;">
+                <!-- Elfsight Testimonials Slider | Untitled Testimonials Slider -->
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-1e24fc4f-19f8-4807-9325-bdfefee17186" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">Get In Touch</h2>
+            <p class="hidden" style="text-align: center; margin-bottom: 40px; color: var(--text-muted);">Let's create something beautiful together. Fill out the form below.</p>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form hidden">
+                <input type="hidden" name="access_key" value="108c5cb9-fb62-4b30-b9bb-9c719b841125">
+                <input type="hidden" name="subject" value="New Contact Form Submission">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="How can I help you?" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content hidden">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1EX8YmSb11/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/qr/WRTX7GHQJML2M1" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dananjaya6275?igsh=amhoMWcydHkwbnli" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dananjaya-prasad-6039ba387?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:dananjayaprasad96@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhananjaya prasad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

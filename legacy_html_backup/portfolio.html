@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dhananjaya Prasad Photography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .portfolio-profile {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+        .profile-image-container {
+            flex: 0.8;
+            display: flex;
+            justify-content: center;
+        }
+        .profile-image-container img {
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+        .profile-text-container {
+            flex: 1.2;
+        }
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        .expertise-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .expertise-card:hover {
+            transform: translateY(-5px);
+        }
+        .expertise-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        .expertise-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            .portfolio-profile {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Dhananjaya Prasad Photography" onerror="this.onerror=null; this.src='https://via.placeholder.com/250x40/000000/FFFFFF?text=DHANANJAYA+PRASAD';">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="nav-dropdown">
+                    <a href="gallery.html">Gallery <i class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 3px;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="gallery.html">All Works</a></li>
+                        <li><a href="featured-works.html">Feature</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1 class="hidden">Portfolio</h1>
+    </div>
+
+    <!-- Portfolio Profile Content -->
+    <section class="section">
+        <div class="container">
+            <div class="portfolio-profile">
+                <div class="profile-image-container hidden">
+                    <img src="images/profile.jpg" alt="Dananjaya Prasad - Portfolio">
+                </div>
+                <div class="profile-text-container hidden" style="transition-delay: 0.2s;">
+                    <h2 style="font-size: 2.5rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">Dananjaya Prasad</h2>
+                    <h4 style="color: var(--text-muted); font-weight: 400; margin-bottom: 30px; letter-spacing: 1px; font-size: 1.1rem;">Founder & Lead Photographer, Zinetzu</h4>
+                    <p style="margin-bottom: 20px;">I am a professional photographer based in Sri Lanka, dedicated to bridging the gap between imagination and reality through high-end visual storytelling. My work lives at the intersection of creative intuition and technical precision, specializing in commercial events, editorial fashion, and advertising product photography.</p>
+                    <p style="margin-bottom: 20px;">Driven by a passion for visual science, I am currently completing a BA (Hons) in Image Art at the University of Kelaniya. This rigorous academic background in lighting physics and color theory, paired with intensive, real-world industrial training under senior industry veterans, allows me to deliver commercial-grade impact with an uncompromising standard of professionalism.</p>
+                    <p style="margin-bottom: 40px;">From advanced studio lighting to precise post-production workflows, my mission is simple: to capture raw, authentic energy and craft visually stunning imagery that elevates personal milestones and empowers brands to stand out.</p>
+                </div>
+            </div>
+
+            <!-- Core Expertise -->
+            <div style="margin-top: 60px;">
+                <h2 class="section-title hidden" style="text-align: left; margin-bottom: 20px;">Core Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card hidden" style="transition-delay: 0.1s;">
+                        <h4>Fashion & Portraiture</h4>
+                        <p>Blending modern aesthetics with traditional cultural motifs.</p>
+                    </div>
+                    <div class="expertise-card hidden" style="transition-delay: 0.2s;">
+                        <h4>Commercial & Events</h4>
+                        <p>Comprehensive, high-energy coverage for large-scale conventions and concerts.</p>
+                    </div>
+                    <div class="expertise-card hidden" style="transition-delay: 0.3s;">
+                        <h4>Product & Advertising</h4>
+                        <p>Precision studio setups and creative light painting designed to elevate brand identities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Get In Touch -->
+            <div style="margin-top: 60px; margin-bottom: 40px;" class="hidden">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Get In Touch</h2>
+                <div class="contact-info-grid">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div>
+                            <strong>Digital Media Platform</strong><br>
+                            <span style="color: var(--text-muted);">Zinetzu</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-camera"></i>
+                        <div>
+                            <strong>Portfolio</strong><br>
+                            <span style="color: var(--text-muted);">Dananjaya Prasad Photography</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            <span style="color: var(--text-muted);">dananjayaprasad96@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <span style="color: var(--text-muted);">076 74 55 540</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content hidden">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1EX8YmSb11/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/qr/WRTX7GHQJML2M1" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dananjaya6275?igsh=amhoMWcydHkwbnli" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dananjaya-prasad-6039ba387?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:dananjayaprasad96@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhananjaya prasad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Dhananjaya Prasad Photography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .services-intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+            text-align: center;
+            color: var(--text-muted);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        .service-subtitle {
+            font-size: 1.05rem;
+            color: var(--accent-color, #a0a0a0);
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .service-card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .service-perfect-for {
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            margin-top: auto;
+        }
+        .workflow-section {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 60px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        .workflow-section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .workflow-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+        .workflow-list {
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .workflow-list li {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .workflow-list i {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-top: 5px;
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .workflow-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Dhananjaya Prasad Photography" onerror="this.onerror=null; this.src='https://via.placeholder.com/250x40/000000/FFFFFF?text=DHANANJAYA+PRASAD';">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="nav-dropdown">
+                    <a href="gallery.html">Gallery <i class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 3px;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="gallery.html">All Works</a></li>
+                        <li><a href="featured-works.html">Feature</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1 class="hidden">Our Services</h1>
+    </div>
+
+    <!-- Services Content -->
+    <section class="section">
+        <div class="container">
+            <p class="services-intro hidden">We combine advanced visual science, high-end studio lighting, and creative intuition to deliver commercial-grade imagery. Utilizing professional full-frame Sony systems, premium Sigma Art optics, and cutting-edge post-production workflows, we provide tailored photography solutions designed to elevate your brand and capture your milestones.</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card hidden" style="transition-delay: 0.1s;">
+                    <h3>1. Fashion & Editorial Portraiture</h3>
+                    <div class="service-subtitle">Bringing concepts to life with style and cultural depth.</div>
+                    <p>We specialize in high-end fashion and portrait photography that tells a story. By blending modern editorial aesthetics with traditional cultural motifs and historical patterns, we create unique, visually striking portraits. Whether it is a studio environment or an outdoor location, we masterfully control light to highlight personality, fabric textures, and cinematic moods.</p>
+                    <div class="service-perfect-for">Perfect for: Fashion brands, model portfolios, conceptual shoots, and creative portraits.</div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card hidden" style="transition-delay: 0.2s;">
+                    <h3>2. Commercial & Event Coverage</h3>
+                    <div class="service-subtitle">Sharp, high-energy documentation of your landmark moments.</div>
+                    <p>From large-scale corporate conventions and tech community events to high-tempo cultural concerts, we deliver comprehensive digital media coverage. We thrive in fast-paced, dynamic environments, ensuring that key moments, crowd energy, and brand presence are captured with absolute clarity and precision.</p>
+                    <div class="service-perfect-for">Perfect for: Corporate events, concerts, university milestones, and community gatherings.</div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card hidden" style="transition-delay: 0.3s;">
+                    <h3>3. Product & Advertising Photography</h3>
+                    <div class="service-subtitle">Precision-focused imagery built to make your brand stand out.</div>
+                    <p>Great product photography requires absolute control over shadows, highlights, and contrast. Using advanced studio lighting workflows and specialized techniques like light painting, we capture products with immaculate detail and strict color accuracy. We create high-impact visuals that grab attention and drive conversions.</p>
+                    <div class="service-perfect-for">Perfect for: E-commerce stores, print advertising, social media marketing, and menu designs.</div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card hidden" style="transition-delay: 0.4s;">
+                    <h3>4. Nature & Fine-Art Landscape</h3>
+                    <div class="service-subtitle">Capturing the raw, authentic beauty of the world.</div>
+                    <p>Our nature photography focuses on powerful visual storytelling, leveraging optimal natural light and advanced composition techniques to document landscapes, wildlife, and environmental narratives in their purest form.</p>
+                    <div class="service-perfect-for">Perfect for: Travel editorials, gallery prints, and digital media publications.</div>
+                </div>
+            </div>
+
+            <!-- Digital Workflow Standard -->
+            <div class="workflow-section hidden" style="transition-delay: 0.5s;">
+                <h2>The Digital Workflow Standard</h2>
+                <div class="workflow-subtitle">Every service we provide includes a premium, modern post-production pipeline</div>
+                
+                <ul class="workflow-list">
+                    <li>
+                        <i class="fa-solid fa-microchip"></i>
+                        <div>
+                            <strong style="color: var(--text-color); font-size: 1.1rem;">AI-Assisted Photo Culling</strong>
+                            <p style="color: var(--text-muted); margin-top: 5px;">Speeding up delivery times by instantly filtering for the absolute best expressions and sharpest focuses.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-sliders"></i>
+                        <div>
+                            <strong style="color: var(--text-color); font-size: 1.1rem;">Advanced Editing & Retouching</strong>
+                            <p style="color: var(--text-muted); margin-top: 5px;">Meticulous color grading, masking, and digital manipulation using industry-standard Adobe software to ensure absolute color accuracy (Hue, Saturation, and Contrast).</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content hidden">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1EX8YmSb11/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/qr/WRTX7GHQJML2M1" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dananjaya6275?igsh=amhoMWcydHkwbnli" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dananjaya-prasad-6039ba387?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:dananjayaprasad96@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhananjaya prasad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
