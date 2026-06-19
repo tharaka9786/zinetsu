@@ -127,12 +127,14 @@ header {
   height: 40px;
   max-width: 250px;
   object-fit: contain;
-  filter: var(--logo-filter, none);
+  /* Logo is naturally black text. In dark mode, invert it to white. */
+  filter: invert(1);
   transition: filter 0.5s ease;
 }
 
 [data-theme="light"] .logo img {
-  filter: invert(1);
+  /* In light mode, remove the invert so it stays black */
+  filter: none;
 }
 
 .nav-links {
