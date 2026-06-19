@@ -7,10 +7,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
           <div className="hero-slider">
-              <div className="slide" style={{ backgroundImage: "url('/images/bg1.jpg')" }}></div>
-              <div className="slide" style={{ backgroundImage: "url('/images/bg2.jpg')" }}></div>
-              <div className="slide" style={{ backgroundImage: "url('/images/bg3.jpg')" }}></div>
-              <div className="slide" style={{ backgroundImage: "url('/images/bg4.jpg')" }}></div>
+              <div className="slide" style={{ backgroundImage: "url('/images/bg1.JPG')" }}></div>
+              <div className="slide" style={{ backgroundImage: "url('/images/bg2.JPG')" }}></div>
+              <div className="slide" style={{ backgroundImage: "url('/images/bg3.JPG')" }}></div>
+              <div className="slide" style={{ backgroundImage: "url('/images/bg4.jpeg')" }}></div>
           </div>
           <div className="hero-overlay"></div>
           <div className="hero-content hidden">

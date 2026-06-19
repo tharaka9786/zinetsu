@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="nav-container">
             <Link href="/" className="logo">
                 <Image 
-                    src="/images/logo.png" 
+                    src="/images/Logo.png" 
                     alt="Dhananjaya Prasad Photography" 
                     width={250} 
                     height={40} 
