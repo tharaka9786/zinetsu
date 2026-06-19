@@ -147,15 +147,81 @@ header {
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--text-color);
+  background: var(--accent-color);
   transition: width 0.3s ease;
 }
 
-.nav-links a:hover::after,
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Mobile Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1001;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--text-color);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--nav-bg);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    height: calc(100vh - 80px);
+    padding-top: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow-y: auto;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
 .nav-links a.active::after {
   width: 100%;
 }
