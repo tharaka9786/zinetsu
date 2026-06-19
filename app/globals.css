@@ -114,7 +114,13 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 40px;
+  padding: 0 5%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: -10px; /* Pull it slightly more to the left corner */
 }
 
 .logo img {

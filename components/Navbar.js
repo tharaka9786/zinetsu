@@ -14,8 +14,14 @@ export default function Navbar() {
   return (
     <header>
         <div className="nav-container">
-            <Link href="/" className="logo" onClick={closeMenu} style={{ fontSize: '1.5rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase' }}>
-                zinetsu
+            <Link href="/" className="logo" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center' }}>
+                <Image 
+                    src="/images/Logo.png" 
+                    alt="Dhananjaya Prasad Photography" 
+                    width={200} 
+                    height={40} 
+                    style={{ objectFit: 'contain', objectPosition: 'left center' }}
+                />
             </Link>
             
             <button className={`hamburger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
