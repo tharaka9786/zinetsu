@@ -3,13 +3,20 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   // Close the mobile menu when a link is clicked
   const closeMenu = () => setIsOpen(false);
+
+  // Don't render the Navbar if we are in the Sanity Admin Studio
+  if (pathname && pathname.startsWith('/studio')) {
+    return null;
+  }
 
   return (
     <header className={isOpen ? 'mobile-open' : ''}>

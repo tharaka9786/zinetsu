@@ -1,6 +1,16 @@
+"use client";
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Don't render the Footer if we are in the Sanity Admin Studio
+  if (pathname && pathname.startsWith('/studio')) {
+    return null;
+  }
+
   return (
     <footer>
         <div className="container footer-content hidden">
